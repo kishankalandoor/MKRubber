@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>M K Rubber Traders</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style.css">
+ <style>
+    @keyframes scrollAnimationDown {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes scrollAnimationUp {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateAnimation {
+      from {
+        transform: rotate(0turn);
+      }
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    .scroll-text {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    #welcome {
+      animation: scrollAnimationDown 2s ease-in-out;
+    }
+
+    #to {
+      animation: rotateAnimation 1s linear, scrollAnimationUp 1s ease-in-out;
+    }
+
+    #nmamit {
+      animation: scrollAnimationDown 2s ease-in-out;
+    }
+
+    #hostels {
+      animation: rotateAnimation 1s linear, scrollAnimationUp 1s ease-in-out;
+    }
+  </style>
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <nav class="sidenavbar">
+                <h1>Welcome to NMAMIT Hostel!!!!!!!!!!!</h1>
+            </nav>
+
+            <nav class="sidesubnavbar">
+                <img src="">
+                <p>Explore Nmamit Hostel</p>
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login / Register</button>
+            </nav>
+
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="text">Notifications</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            v x
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="text">Help & Support<br>
+                    <div class="subtext">View commonly asked queries and Chat</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                <div class="text">Accounts & Settings<br>
+                    <div class="subtext">Location, Payments, Addresses & More</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="gift-outline"></ion-icon>
+                </div>
+                <div class="text">Rewards<br>
+                    <div class="subtext">View your rewards & unlock new ones</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text">BookASmile</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <nav class="navbar">
+                <img src="logo.png" class="brand-logo" alt="" />
+                <div class='input'>
+                    <ion-icon name="search"></ion-icon>
+                    <script>
+                        function performSearch() {
+                            var searchInput = document.getElementById('searchInput');
+                            var searchTerm = searchInput.value;
+                    
+                            window.location.href = `https://www.google.com/search?q=${searchTerm}`;
+                        }
+                    </script>
+                    <input id='searchInput' class='search' placeholder='Search Powered by Google'>
+                    <button onclick='performSearch()' style='border-radius: 5px; background-color: white; border: 1px solid gray; cursor: pointer;' onmouseover='this.style.backgroundColor="#f0f0f0"' onmouseout='this.style.backgroundColor="white"'>Search</button>
+                </div>
+                
+                
+                <div class="right-container">
+                    <a href="#"class="location">M K Rubber Traders</a>
+                    <button class="signin"
+                        onclick="document.getElementById('id01').style.display='block'">Signin</button>
+
+                    <div id="id01" class="modal">
+
+                        <div class="modal-content">
+                            <div class="getstart">
+                                <h3>Get Started</h3>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                            </div>
+
+                            <div class="container">
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <img src="googlelogo.png">
+                                    </div>
+                                    <div class="text">Continue with Google</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="mail-outline" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Email</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="logo-apple" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Apple</div>
+                                </a>
+                            </div>
+                            <h2>OR</h2>
+
+                            <div class="phone">
+                                <img alt="indian flag" src="india.png">
+                                <div class="code">+91</div>
+                                <input id="mobileNo" type="tel" pattern="[0-9]*"
+                                    placeholder="Continue with mobile number" class="mobileNo">
+                            </div>
+
+                            <p>I agree to the <u>Terms & Conditions</u>&<u>Privacy Policy</u></p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn-customized open-menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="subnavbar">
+                <ul class='navitem'>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Products<span>NEW</span></a></li>
+                    <li><a href='#'>Sales</a></li>
+                    <li><a href='#'>Achivements</a></li>
+                    <li><a href='#'>Services</a></li>
+        
+                </ul>
+                <ul class='navitem1'>
+                    <li><a href='#'><span>NEW</span></a></li>
+                
+                    <li><a href=''>Visit M K Rubber Traders</a></li>
+                </ul>
+            </nav>
+<center>
+    <strong>
+    
+
+
+
+         <!--..            //welcome to mk rubber Traders            ...-->   
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 158);">W</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(39, 8, 148);">E</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(1, 1, 67, 0.847);">L</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(59, 38, 137);">C</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(61, 61, 171, 0.819);">O</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(40, 3, 174);">M</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(8, 8, 193);">E</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(35, 4, 147);">T</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(7, 7, 174);">O</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 7, 164);">M</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 179);">K</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 3, 196);">R</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">U</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">B</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">B</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 0, 204);">E</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">R</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">T</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">A</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">D</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">E</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">S</div>
+
+
+
+</strong></center>
+<center><p>M K Rubber Traders, the foremost rubber trading establishment in Bayar, is distinguished for its specialization in the acquisition and distribution of superior rubber products. Our offerings encompass latex, premium rubber sheets, and scrap rubber. Committed to providing a comprehensive solution, we also supply various accessories pertinent to rubber processing. Our unwavering dedication to quality and customer satisfaction has solidified M K Rubber Traders as the preferred destination for customers and farmers seeking top-notch rubber products in the Bayar region.
+</p></center>
+
+
+
+
+
+
+         <!--..    //MK Rubber image            ...-->   
+
+
+
+
+
+
+
+
+            <div class="container text-center py-5">
+            
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+                    <div class="bg-image" style="background-image: url('https://scontent.fbom2-2.fna.fbcdn.net/v/t39.30808-6/419705490_3523105144571216_3628955507879494052_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c42490&_nc_ohc=7gg9jwBABoQAX_zM0ed&_nc_ht=scontent.fbom2-2.fna&oh=00_AfBnCwO7GZpAy6juseergqNdOMoNycXjH_wd2H1wafWAGg&oe=65BF12B1'); background-size: cover; background-attachment: fixed; height: 50vh; padding-top: 150px;">
+                   
+                </div> 
+                </div>
+            </div>
+
+             <!--..<script src="js/data.js"></script>...-->
+            <!--.. <script src="js/app.js"></script>...-->
+
+
+
+
+         <!--..        Recomanded Products        ...-->         
+                       
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 7, 164);">R</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 179);">E</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 3, 196);">C</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">O</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">M</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">A</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">N</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">D</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">E</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">D</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 0, 204);">P</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">o</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">D</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">U</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">C</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">T</div>
+
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">S</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">A</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">N</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">D</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">S</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">E</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">V</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">I</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">C</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">E</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">S</div>
+
+
+
+   <!--..        Recomanded Products  Gallary  images link  etc ....     ...-->  
+   
+   
+<div class="hostels-list">
+    <div class="card-container">
+
+        <a href="#" class="maingents">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/717mDTa3M2L.jpg" class="card-img" alt="Main gents hostel ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>95% &ThinSpace; </p>
+                </div>
+            </div>
+            <h3>Head Lamp</h3>
+            <p class="detail">Explore Head Lamp </p>
+        </a>
+       
+
+        <a href="#" class="cup">
+            <div class="card">
+                <img src="https://5.imimg.com/data5/MA/ZD/EI/SELLER-1639485/b-01-19--500x500.jpg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Latex Collecting Cup </h3>
+            <p class="detail">Explore  Bowl</p>
+        </a>
+
+        <a href="#" class="Knife">
+            <div class="card">
+                <img src="https://gtpimg.s3.us-west-2.amazonaws.com/uploads/2023/10/19/81296/1697683141.png" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Rubber tapping knife  </h3>
+            <p class="detail">Explore Rubber tapping knife </p>
+        </a>
+
+
+
+
+        <a href="#" class="Raingaurd">
+            <div class="card">
+                <img src=" https://www.klpk.com.my/wp-content/uploads/2018/11/IMG_3701-min-1-766x1024.jpg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Rain Gaurd</h3>
+            <p class="detail">Explore Rain Gaurd </p>
+        </a>
+       
+
+
+
+        <a href="#" class="Chilli">
+            <div class="card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/7/RJ/YJ/IO/11976388/product-jpeg-500x500.jpg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 10k votes</p>
+                </div>
+            </div>
+            <h3>Chilli Rubber Addisive </h3>
+            <p class="detail">Explore Chilli Rubber addisive </p>
+        </a>
+
+
+
+
+
+        <a href="#" class="Formic Acid with PNP ">
+            <div class="card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/TY/OF/WA/1639485/formic-acid-with-pnp-5-kg-500x500.jpg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 11k votes</p>
+                </div>
+            </div>
+            <h3>Formic Acid with PNP</h3>
+            <p class="detail">Explore Formic Acid with PNP </p>
+        </a>
+
+
+
+
+        <a href="#" class="ring clamp">
+            <div class="card">
+                <img src="https://5.imimg.com/data5/KZ/PF/IA/SELLER-2595925/rubber-lined-split-clamps.jpg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 9k votes</p>
+                </div>
+            </div>
+            <h3>Ring clamp</h3>
+            <p class="detail">Explore Ring clamp</p>
+        </a>
+
+
+
+
+
+
+        <a href="#" class="Machine">
+            <div class="card">
+                <img src="https://scontent.fbom2-2.fna.fbcdn.net/v/t39.30808-6/419705490_3523105144571216_3628955507879494052_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c42490&_nc_ohc=7gg9jwBABoQAX_zM0ed&_nc_ht=scontent.fbom2-2.fna&oh=00_AfBnCwO7GZpAy6juseergqNdOMoNycXjH_wd2H1wafWAGg&oe=65BF12B1" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Roller Machine</h3>
+            <p class="detail">Explore Sheet Roller Machine </p>
+        </a>
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+   <!--..      What we buy ??????????      ...-->       
+
+
+                    
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 7, 164);">E</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 179);">X</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 3, 196);">P</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">L</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">O</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">R</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">E</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">T</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">R</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">A</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 0, 204);">D</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">E</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">B</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">I</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">L</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">L</div>
+
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">A</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">N</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">C</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">E</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">W</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">I</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">T</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">H</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 7, 164);">M</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 179);">K</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 3, 196);">R</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);">U</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);">B</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);">B</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 0, 204);">E</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">R</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">T</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">A</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);">D</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);">E</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);">R</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);">S</div>
+
+
+
+   <!--..       What we buy Gallary     ...-->       
+
+
+<div class="hostels-list">
+    <div class="card-container">
+
+        <a href="#" class="sheet">
+            <div class="card">
+                <img src="https://labsaco.com/wp-content/uploads/2022/05/rubber-sheets-june182020-min.jpg" class="card-img" alt="Main gents hostel ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>95% &ThinSpace; </p>
+                </div>
+            </div>
+            <h3>Rubber Sheets</h3>
+            <p class="detail"> </p>
+        </a>
+       
+
+        <a href="#" class="scrap">
+            <div class="card">
+                <img src="https://img1.exportersindia.com/product_images/bc-full/2021/3/8430462/rubber-scrap-1615394942-5751057.jpeg" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Scrap</h3>
+            <p class="detail"></p>
+        </a>
+
+     
+
+
+        <a href="#" class="Raingaurd">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Stv9lF5zFhH0eNFBeNMUbkk4eIw4mWVNYdRrL227sFbJRNb2J6uKRHF4ptUIsleVVww&usqp=CAU" class="card-img" alt="Bowl image ">
+                <div class="card-body">
+                    <ion-icon name="heart-sharp"></ion-icon>
+                    <p>94% &ThinSpace; 14k votes</p>
+                </div>
+            </div>
+            <h3>Latex</h3>
+            <p class="detail"></p>
+        </a>
+       
+
+
+
+
+
+
+    </div>
+
+</div>
+</div>
+        <!-- End content -->
+
+    </div>
+    <!-- End wrapper -->
+
+</body>
+
+
+   <!--..     Footer    ...-->       
+<div class="footer mt-auto">
+
+
+       <!--..  Social Media image buttons        ...-->       
+    <div class="social__icons">
+        <a href="/" class="social__icon--link" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="/" class="social__icon--link"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    
+       <!--..        Details of M K R T IN footer      ...-->       
+      <div class="footer-text">
+
+      <p>Contact Us:Mkrubber@gmail.com| Phone:+91 9999999999</p>
+<p>M K Rubber Traders , Sana Complex Chippar Post Bayar, Kasargod - 671322</p>
+
+
+
+
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">©</div>
+   
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">K</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">I</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">S</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">H</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">A</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">N</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">K</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">A</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">L</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">A</div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">N</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">D</div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">O</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">O</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">R</div>
+
+
+
+
+
+
+    </div>
+
+</html>

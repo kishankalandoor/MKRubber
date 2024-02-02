@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>M K Rubber Traders</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+ <style>
+    @keyframes scrollAnimationDown {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes scrollAnimationUp {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateAnimation {
+      from {
+        transform: rotate(0turn);
+      }
+      to {
+        transform: rotate(1turn);
+      }
+    }
+
+    .scroll-text {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    #welcome {
+      animation: scrollAnimationDown 2s ease-in-out;
+    }
+
+    #to {
+      animation: rotateAnimation 1s linear, scrollAnimationUp 1s ease-in-out;
+    }
+
+    #nmamit {
+      animation: scrollAnimationDown 2s ease-in-out;
+    }
+
+    #hostels {
+      animation: rotateAnimation 1s linear, scrollAnimationUp 1s ease-in-out;
+    }
+  </style>
+    <!-- Javascript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <nav class="sidenavbar">
+                <h1></h1>
+            </nav>
+
+            <nav class="sidesubnavbar">
+                <img src="">
+                
+                <button class="login" onclick="document.getElementById('id01').style.display='block'">Login / Register</button>
+            </nav>
+
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                </div>
+                <div class="text">Notifications</div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+                <div class="text">History<br>
+                    <div class="subtext">View all your bookings & Purchases</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="tv-outline"></ion-icon>
+                </div>
+                <div class="text">Stream Library<br>
+                    <div class="subtext">Rented & Purchased Movies</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            v x
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <div class="text">Help & Support<br>
+                    <div class="subtext">View commonly asked queries and Chat</div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a class="btn-disabled" href="#">
+                <div class="lefticon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                </div>
+                <div class="text">Accounts & Settings<br>
+                    <div class="subtext"></div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="gift-outline"></ion-icon>
+                </div>
+                <div class="text"><br>
+                    <div class="subtext"></div>
+                </div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+            <a href="#">
+                <div class="lefticon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <div class="text"></div>
+                <div class="righticon">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </a>
+
+        </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <nav class="navbar">
+                <img src="logo.png" class="brand-logo" alt="" />
+                <div class='input'>
+                    <ion-icon name="search"></ion-icon>
+                    <script>
+                        function performSearch() {
+                            var searchInput = document.getElementById('searchInput');
+                            var searchTerm = searchInput.value;
+                
+                            window.location.href = `https://www.google.com/search?q=${searchTerm}`;
+                        }
+                
+                        function handleKeyPress(event) {
+                            if (event.key === 'Enter') {
+                                performSearch();
+                            }
+                        }
+                    </script>
+                    <input id='searchInput' class='search' placeholder='Search Powered by Google' onkeypress='handleKeyPress(event)'>
+                   
+                </div>
+                
+                
+                
+                <div class="right-container">
+                    <a href="#"class="location">M K Rubber Traders</a>
+                    <button class="signin"
+                        onclick="document.getElementById('id01').style.display='block'">Signin</button>
+
+                    <div id="id01" class="modal">
+
+                        <div class="modal-content">
+                            <div class="getstart">
+                                <h3>Get Started</h3>
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </span>
+                            </div>
+
+                            <div class="container">
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <img src="googlelogo.png">
+                                    </div>
+                                    <div class="text">Continue with Google</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="mail-outline" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Email</div>
+                                </a>
+                                <a href="#" class="button">
+                                    <div class="logo">
+                                        <ion-icon name="logo-apple" style="font-size: 22px;"></ion-icon>
+                                    </div>
+                                    <div class="text">Continue with Apple</div>
+                                </a>
+                            </div>
+                            <h2>OR</h2>
+
+                            <div class="phone">
+                                <img alt="indian flag" src="india.png">
+                                <div class="code">+91</div>
+                                <input id="mobileNo" type="tel" pattern="[0-9]*"
+                                    placeholder="Continue with mobile number" class="mobileNo">
+                            </div>
+
+                            <p>I agree to the <u>Terms & Conditions</u>&<u>Privacy Policy</u></p>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn-customized open-menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="subnavbar">
+                <ul class='navitem'>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Products<span>NEW</span></a></li>
+                    <li><a href='#'>Sales</a></li>
+                    <li><a href='#'>Achivements</a></li>
+                    <li><a href='#'>Services</a></li>
+        
+                </ul>
+                <ul class='navitem1'>
+                    <li><a href='#'><span>NEW</span></a></li>
+                
+                    <li><a href=''>Visit M K Rubber Traders</a></li>
+                </ul>
+            </nav>
+<center>
+    <strong>
+    
+
+
+
+         <!--..            //welcome to mk rubber Traders            ...-->   
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 158);"><h1>W</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(39, 8, 148);"><h1>E</h1></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(1, 1, 67, 0.847);"><h1>L</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(59, 38, 137);"><h1>C</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(61, 61, 171, 0.819);"><h1>O</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(40, 3, 174);"><h1>M</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(8, 8, 193);"><h1>E</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(35, 4, 147);"><h1>T</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(7, 7, 174);"><h1>O</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 7, 164);"><h1>M</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 179);"><h1>K</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 3, 196);"><h1>R</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(4, 4, 184);"><h1>U</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(41, 0, 189);"><h1>B</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 185);"><h1>B</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(44, 0, 204);"><h1>E</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);"><h1>R</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);"><h1>T</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(3, 3, 218);"><h1>R</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);"><h1>A</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(6, 6, 237, 0.723);"><h1>D</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(51, 3, 226);"><h1>E</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 200);"><h1>R</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(49, 4, 212);"><h1>S</h1></div>
+
+<!---   -->
+<div id="leadership" style="padding: 20px 0 20px 0;"></div>
+        <section class="leadership-team">
+            <div class="container">
+                <div class="leadership-team-header">
+                    <Strong>
+
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                        <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>M</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>K</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>R</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>U</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>B</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>B</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(6, 5, 8);"><h1>E</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>R</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>T</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>R</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(2, 2, 3);"><h1>A</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(0, 0, 0, 0.723);"><h1>D</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>E</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 8);"><h1>R</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>S</h1></div>
+                    </Strong>
+                    
+                </div>
+                <div class="leadership-profiledescription" id="leadership1">
+                    <div class="row">
+                        <center> 
+                           
+                            <img src="manu.jpg" width="156" height="194" alt="alt text" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(100%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(100%)';">
+
+                           </center>
+                           </div>
+
+                            <div class="ceo">
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                
+                               
+                        <div class="col-md-3">
+                            <div class="leadership-profiledescription-img">
+                                
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                
+                               
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9">
+                            <div class="leadership-profiledescription-content">
+                                <div class="black-underline"></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                <div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                
+                                <center><strong><h3></strong><div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+                                </h3><div class="profiledescription-designation">
+
+
+                                   
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>M</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>A</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>N</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>U</h1></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>M</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>K</h1></div>
+
+
+                                    </h3><div class="profiledescription-designation"><h3>Founder & CEO</h3></center>
+                              
+                                <center><p>Manu M K is the founder and CEO of M K Rubber Traders Bayar, bringing over 20 years of expertise in the trade. His extensive experience reflects a deep understanding of the industry, marked by a notable focus on building strong trade relationships and collaborations with multinational companies.Throughout his career, Manu M K has demonstrated a keen commitment to fostering partnerships that benefit both his company and the collaborators. His proficiency in navigating the intricacies of international trade has contributed to the success of M K Rubber Traders Bayar.Under Manu M K's leadership, the company has achieved a commendable track record of serving thousands of satisfied clients and farmers. This accomplishment not only underscores his dedication to customer satisfaction but also highlights the positive impact of M K Rubber Traders Bayar on the agricultural community.As the driving force behind the company, Manu M K continues to steer M K Rubber Traders Bayar towards growth and success, leveraging his extensive experience, industry knowledge, and a commitment to excellence in trade relationships. </p>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+          
+
+<!--     -->
+
+</strong></center>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<center>
+
+
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>I</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>N</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>A</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>S</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>S</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>O</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(6, 5, 8);"><h1>C</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>I</h1></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>A</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>T</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(2, 2, 3);"><h1>I</h1></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgba(0, 0, 0, 0.723);"><h1>O</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>N</h1></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(5, 5, 8);"><h1>W</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>I</h1></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>T</h1></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(0, 0, 0);"><h1>H</h1></div>
+
+
+
+
+
+</center>
+<center>
+    
+    <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-185425,resizemode-75,msid-54575468/markets/stocks/news/mrf-hits-rs-50000-but-at-10-pe-it-is-third-cheapest-tyre-stock-in-market/mrf-logo.jpg" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<center> 
+    <img src="data:image/png;base64,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" length="200px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+
+</center>
+
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<center> 
+    <img src="https://www.nandmotors.in/assets/images/dealar/Apollo-Tyres-logo.png" length="200px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center><center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<center> 
+    <img src="https://i.pinimg.com/originals/eb/ff/a5/ebffa571bd45663acf33aab1ccd944e9.jpg" length="200px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+
+
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<center> <img src="https://companieslogo.com/img/orig/CEATLTD.NS_BIG-edf1c7eb.png?t=1604067031" length="200px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+<center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center><center>
+    
+    <img src="" length="120px"width="200px" style="transform: scale(1.5); transform-origin: 0 0; border-radius: 5px; transition: transform 0.3s, filter 0.3s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); filter: grayscale(10%);" onmouseover="this.style.transform='scale(1.6)'; this.style.filter='grayscale(0%)';" onmouseout="this.style.transform='scale(1.5)'; this.style.filter='grayscale(10%)';">
+   
+</center>
+
+<center> 
+    <img src="" length="200px"width="200px">
+
+</center>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+</div>
+        <!-- End content -->
+
+    </div>
+    <!-- End wrapper -->
+
+</body>
+
+
+   <!--..     Footer    ...-->       
+<div class="footer mt-auto">
+
+
+       <!--..  Social Media image buttons        ...-->       
+       <div class="social-icons">
+        <a href="https://www.facebook.com/NMAMITsince1986" target="_blank" style="width: 15%; display: block; overflow: hidden; mix-blend-mode: color-burn;">
+            <img src="https://e7.pngegg.com/pngimages/97/391/png-clipart-computer-icons-logo-facebook-inc-facebook-rectangle-logo.png" alt="Facebook" class="social-icon" style="width: 100%; height: auto;">
+        </a>
+        
+        <a href="https://www.instagram.com/nmamit_nitte" target="_blank" style="width: 15%; display: block; overflow: hidden; mix-blend-mode: color-burn;"> 
+                      <img src="https://www.citypng.com/public/uploads/preview/-51609193448mids70tdmp.png"
+                alt="Instagram" class="social-icon" style="width: 100%; height: auto;">
+            </a>
+        </a>
+        <a href="https://www.youtube.com/c/NMAMInstituteofTechnology" target="_blank" style="width: 15%; display: block; overflow: hidden; mix-blend-mode: color-burn;">
+          <img src="https://e7.pngegg.com/pngimages/163/425/png-clipart-youtube-computer-icons-logo-subscribe-angle-desktop-wallpaper.png"
+                alt="YouTube" class="social-icon" style="width: 100%; height: auto;">
+        </a>
+    </div>
+    
+       <!--..        Details of M K R T IN footer      ...-->       
+      <div class="footer-text">
+        <div class="right-container">
+            <a href="#"class="location"><p>Contact Us:Mkrubber@gmail.com| Phone:+91 9999999999</p>
+                <p>M K Rubber Traders , Sana Complex Chippar Post Bayar, Kasargod - 671322</p>
+                
+                </a>
+            </div>
+      
+
+
+
+
+<a href="aboutus.html" style="text-decoration: none;">
+   
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">©</div>
+   
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">M</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">K</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">R</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">U</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">B</div>
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">B</div>
+
+
+
+
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">E</div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">R</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">T</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">R</div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">A</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">D</div>
+
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">E</div>
+<div id="welcome" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">R</div>
+
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; color: rgb(255, 255, 255);">S</div>
+
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+<div id="to" class="scroll-text" style="text-align: center; font-weight: bold; font-size: larger; "><span></span></div>
+
+</a>
+
+
+
+    </div>
+
+</html> 
